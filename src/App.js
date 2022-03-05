@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Provider as PictureProvider } from './context/PictureContext';
+import HomeScreen from './screens/HomeScreen.js';
+import TitleComponent from './components/TitleComponent.js';
 
-function App() {
+
+const AppScreen = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+        <PictureProvider>
+          <TitleComponent />
+          <HomeScreen />
+        </PictureProvider>
+  )
+};
 
-export default App;
+export default AppScreen;

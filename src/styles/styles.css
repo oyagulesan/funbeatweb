@@ -1,0 +1,21 @@
+.pictureStyle {
+  width:  winWidth;
+  height: winHeight;
+  top: 0;
+}
+.leftPane {
+  position: 'absolute';
+  top: 100;
+  left: 10;
+  height: winHeight - 130;
+  width: winWidth / 2 - 8;
+  zIndex: 100;
+}
+.rightPane {
+  position: 'absolute';
+  top: 100;
+  right: 10;
+  height: winHeight - 130;
+  width: winWidth / 2 - 8;
+  zIndex: 100;
+}
